@@ -14,7 +14,7 @@
 
 <%= form_for(Message.new) do |f| %>
   <span style="vertical-align:8px"><B>名前:</B></span>
-  <%= f.text_area :name, :size => "20x1" %>
+  <%= f.text_field :name, :size => "20x1" %>
     <br>
   <span style="vertical-align:50px"><b>内容:</B></span>
   <%= f.text_area :body, :size => "40x5" %>
