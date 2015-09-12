@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    メッセージ一覧
+    <span style="font-size:28px"><B>メッセージ一覧</B></span>
   </div>
     
   <div class="panel-body">
@@ -13,10 +13,11 @@
 </div>
 
 <%= form_for(Message.new) do |f| %>
-  名前:
+  <span style="vertical-align:8px"><B>名前:</B></span>
   <%= f.text_area :name, :size => "20x1" %>
     <br>
-  内容:
-  <%= f.text_area :body, :size => "20x5" %>
+  <span style="vertical-align:50px"><b>内容:</B></span>
+  <%= f.text_area :body, :size => "40x5" %>
+    <br>
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
