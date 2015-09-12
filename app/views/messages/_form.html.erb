@@ -13,9 +13,12 @@
   <% end %>
 
   名前:
-  <%= f.text_field :name %>
+  <%= f.text_field :name, :class => "message-info", :placeholder => "名前" %>
+  
+  年齢:
+  <%= f.text_field :age, :size => "5", :class => "message-info", :placeholder => "年齢" %>
 
   内容:
-  <%= f.text_field :body %>
+  <%= f.text_area :body, :size => "40x5", :class => "message-info",  :placeholder =>"内容を入力してください" %>
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
