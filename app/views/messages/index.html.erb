@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    メッセージ一覧
+    <span style="font-size:28px"><B>メッセージ一覧</B></span>
   </div>
 
   <div class="panel-body">
@@ -15,5 +15,33 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 <% #部分テンプレートを読み込んでいる %>
 <%= render 'form' %>
+=======
+<%= form_for(Message.new) do |f| %>
+<div class="form-horizontal">
+  <div class="pull-left">
+    <div class="form-group">
+      <label for="name" class="col-xs-2 control-label">名前:</label>
+        <div class="col-xs-6">
+        <%= f.text_field :name, :class => "form-control", :size => "20x1" %>
+        <span class="help-block">名前を入力してください。</span>
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="body" class="col-xs-2 control-label">内容:</label>
+        <div class="col-xs-10">
+        <%= f.text_area :body, :class => "form-control", :size => "40x5" %>
+        <span class="help-block">投稿内容を入力してください。</span>
+        </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-2 col-xs-10">
+      <%= f.submit class: "btn btn-success" %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+>>>>>>> challenge1
